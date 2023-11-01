@@ -1,10 +1,11 @@
 /* eslint-disable react/no-unknown-property */
 import {
-  ContactShadows,
-  Environment,
+  // ContactShadows,
+  // Environment,
   OrbitControls,
-  Sky,
+  // Sky,
 } from "@react-three/drei";
+import { Office } from "./Office";
 import { Avatar } from "./Avatar";
 import { useControls } from "leva";
 
@@ -19,10 +20,11 @@ export const Experience = () => {
   return (
     <>
       <OrbitControls />
-      <Sky />
-      <Environment preset="sunset" />
-      <group position-y={-1}>
-        <ContactShadows
+      {/* <Sky /> */}
+      {/* <Environment preset="sunset" /> */}
+      <Office/>
+      <group position-y={0}>
+        {/* <ContactShadows
           opacity={0.42}
           scale={10}
           blur={1}
@@ -30,7 +32,7 @@ export const Experience = () => {
           resolution={256}
           color="#000000"
         />
-        <Avatar animation={animation} />
+       
         {animation === "Typing" && (
           <mesh scale={[0.7, 0.4, 0.7]} position-y={0.25}>
             <boxGeometry />
@@ -40,8 +42,9 @@ export const Experience = () => {
         <mesh scale={5} rotation-x={-Math.PI * 0.5} position-y={-0.001}>
           <planeGeometry />
           <meshStandardMaterial color="white" />
-        </mesh>
-        {/* <ambientLight intensity={1} /> */}
+        </mesh> */}
+         <Avatar animation={animation} />
+        <ambientLight intensity={1} />
       </group>
     </>
   );
