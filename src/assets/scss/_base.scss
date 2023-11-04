@@ -25,3 +25,51 @@ height: 100vh;
 .main{
     width: 100%;
 }
+
+
+.barsBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 20;
+    top: 12px;
+    right: 34px;
+    padding: 3px;
+
+}
+
+.barsIcon{
+    font-size: 20px;
+}
+
+.menuBars{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transition: all ease .3s;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+   justify-content: center;
+    // flex: -1 flex items-start justfify-center flex-col gap-6 p-8
+}
+
+.buttonMenu{
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-bottom: 15px;
+    &:hover{
+        color: rgb(37, 89, 172)
+    }
+}
